@@ -11,7 +11,7 @@ puts "相乘：#{24 * 60 * 60}";
 
 name = "Ruby";
 puts name;
-puts "#{name+", OK"}";
+puts "#{name + ", OK"}";
 
 # output
 # escape using "\"

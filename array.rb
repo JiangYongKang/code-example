@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/ruby
 # -*- conding: utf-8 -*-
 
 ary = ["fred", 10, 3.14, "This is a string", "last element"];
