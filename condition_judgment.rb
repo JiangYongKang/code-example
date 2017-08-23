@@ -6,6 +6,7 @@
 # Ruby 使用 elsif，不是使用 else if 和 elif。
 # 如果 conditional 为真，则执行 code。如果 conditional 不为真，则执行 else 子句中指定的 code。
 # 通常我们省略保留字 then 。若想在一行内写出完整的 if 式，则必须以 then 隔开条件式和程式区块。
+# 同时 then 关键字可以用 ":" 代替
 score = 81
 if score >= 0 and score < 60 then
     puts "Test exam failed"
