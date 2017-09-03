@@ -61,4 +61,28 @@ class ClassTest < Test::Unit::TestCase
   def test_object_song_logger_singleton
     assert_equal(SongLogger.create.object_id, SongLogger.create.object_id)
   end
+
+  def test_object_song_list_delete
+    song_list = SongList.new
+    s1 = Song.new("title1", "artist1", 1)
+    s2 = Song.new("title2", "artist2", 2)
+    s3 = Song.new("title3", "artist3", 3)
+    s4 = Song.new("title4", "artist4", 4)
+    s5 = Song.new("title5", "artist5", 5)
+
+    song_list.append(s1).append(s2).append(s3).append(s4).append(s5)
+
+    assert_equal(s1, song_list[0])
+    assert_equal(s2, song_list[1])
+    assert_equal(s3, song_list[2])
+    assert_equal(s4, song_list[3])
+    assert_equal(s5, song_list[4])
+
+    assert_equal(s1, song_list.delete_first)
+    assert_equal(s2, song_list.delete_first)
+    assert_equal(s3, song_list.delete_first)
+    assert_equal(s5, song_list.delete_last)
+    assert_equal(s4, song_list.delete_last)
+    assert_nil(song_list.delete_last)
+  end
 end
