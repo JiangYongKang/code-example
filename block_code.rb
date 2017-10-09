@@ -12,9 +12,7 @@ def bolck_code
     puts "this is method"
     yield
 end
-bolck_code {
-    puts "this is block"
-}
+bolck_code { puts "this is block" }
 # output:
 # this is method
 # this is block
@@ -27,9 +25,7 @@ def block_code
     puts "this is method"
     yield 10, 20, 30
 end
-block_code {
-    |a, b, c| puts "this is block: #{a} #{b} #{c}"
-}
+block_code { |a, b, c| puts "this is block: #{a} #{b} #{c}" }
 # output:
 # this is method
 # this is block: 10 20 30
@@ -37,3 +33,11 @@ block_code {
 # 将代码块作为参数
 # 如果方法的最后一个参数前带有 &，那么您可以向该方法传递一个块，且这个块可被赋给最后一个参数。
 # 如果 * 和 & 同时出现在参数列表中，& 应放在后面。
+
+def my_method(&my_method)
+  my_method.call
+end
+
+my_method do
+  puts "We're in the block!"
+end

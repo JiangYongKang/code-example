@@ -6,6 +6,21 @@ class ArrayTest < Test::Unit::TestCase
   def test_basic
     array = [1, 3, 5, 7, 9]
 
+    assert_equal(1, array.first)
+    assert_equal(9, array.last)
+
+    assert_equal(5, array.length)
+    assert(array.include?(1))
+    assert_equal(1, array.find_index(3))
+    assert_equal([1, 3, 5, 7, 9, 11], array.push(11))
+    assert_equal(11, array.pop)
+
+    assert("1357911", array.join)
+    assert("1-3-5-7-9-11", array.join("-"))
+
+    assert_equal("assert".chars, ["a", "s", "s", "e", "r", "t"])
+    assert_equal("a-s-s-e-r-t".split("-"), ["a", "s", "s", "e", "r", "t"])
+
     assert_equal([3, 5, 7], array[1, 3])
     assert_equal([7],       array[3, 1])
     assert_equal([5, 7],    array[-3, 2])

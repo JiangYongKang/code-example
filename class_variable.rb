@@ -24,8 +24,8 @@ class Customer
 end
 
 # 创建对象
-cust1=Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
-cust2=Customer.new("2", "Poul", "New Empire road, Khandala")
+cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+cust2 = Customer.new("2", "Poul", "New Empire road, Khandala")
 
 # 调用方法
 cust1.total_no_of_customers()
