@@ -21,3 +21,8 @@ gulp.task("less", () => {
 
 // 将上面两个任务合并到 default 任务中，这样直接输入 gulp 就可以默认的执行 "webpack" 和 "less" 这两个任务。
 gulp.task("default", ["webpack", "less"]);
+
+gulp.task("watch", () => {
+    gulp.watch("less/**/*.less", ["less"]);
+    gulp.watch("js/**/*.js", ["webpack"]);
+});
