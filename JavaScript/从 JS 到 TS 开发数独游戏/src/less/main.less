@@ -62,6 +62,22 @@ body {
             &:last-child {
                 border-right-width: 2px;
             }
+
+            &.fixed {
+                background: #eeeeee;
+            }
+
+            &.empty {
+                color: white;
+            }
+
+            &.mark1 {
+                background: lightpink;
+            }
+
+            &.mark2 {
+                background: lightgreen;
+            }
         }
 
         &.row_g_bottom {
@@ -80,6 +96,20 @@ body {
             >span {
                 border-bottom-width: 2px;
             }
+        }
+    }
+}
+
+@popupCellSize: 40px;
+.popup-num {
+    .container();
+    position: absolute;
+    padding-left: 0;
+    .row {
+        >span {
+            width: @popupCellSize;
+            height: @popupCellSize;
+            line-height: @popupCellSize;
         }
     }
 }
