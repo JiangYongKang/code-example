@@ -2,13 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>row</title>
+    <title>align_self</title>
     <link rel="shortcut icon" type="image/x-icon" href="Favicon.ico">
     <link rel="stylesheet" type="text/css" href="commen.css">
     <style type="text/css">
       .main {
         display: flex;
-        flex-direction: row;
+      }
+      .item {
+        flex: 1;
+      }
+      .main div:nth-of-type(2) {
+        /* 让容器内的某个元素具备与其他元素不同的对其方式，此处让 B 进行垂直居中 */
+        align-self: center;
       }
     </style>
   </head>
@@ -17,10 +23,6 @@
       <div class="item" style="background-color: #FBE9EB;">A</div>
       <div class="item" style="background-color: #C6E48B;">B</div>
       <div class="item" style="background-color: #FBE9EB;">C</div>
-      <div class="item" style="background-color: #C6E48B;">D</div>
-      <div class="item" style="background-color: #FBE9EB;">E</div>
-      <div class="item" style="background-color: #C6E48B;">F</div>
-      <div class="item" style="background-color: #FBE9EB;">G</div>
     </div>
   </body>
 </html>

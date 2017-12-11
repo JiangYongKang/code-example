@@ -424,7 +424,6 @@ module.exports = function () {
         this._$panel.on("click", "span", function (e) {
             var $cell = _this._$targetCell;
             var $span = $(e.traget);
-            debugger;
 
             if ($span.hasClass("mark1")) {
                 if ($cell.hasClass("mark1")) {
@@ -441,7 +440,8 @@ module.exports = function () {
             } else if ($span.hasClass("empty")) {
                 $cell.text(0).addClass("empty");
             } else {
-                $cell.removeClass("empty").text($span.text());
+                debugger;
+                // $cell.removeClass("empty").text($span.text());
             }
 
             _this.hide();

@@ -8,7 +8,6 @@ module.exports = class PopupNumbers {
         this._$panel.on("click", "span", e => {
             const $cell = this._$targetCell;
             const $span = $(e.traget);
-            debugger
 
             if ($span.hasClass("mark1")) {
                 if ($cell.hasClass("mark1")) {
@@ -25,6 +24,7 @@ module.exports = class PopupNumbers {
             } else if ($span.hasClass("empty")) {
                 $cell.text(0).addClass("empty");
             } else {
+                // TODO: 获取 span 的值发生异常
                 $cell.removeClass("empty").text($span.text());
             }
 
