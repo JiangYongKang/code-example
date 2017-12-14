@@ -1,0 +1,13 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "puppeteer web crawler demo",
+  "main": "index.js",
+  "author": "vincent",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "puppeteer": "^0.13.0"
+  }
+}
