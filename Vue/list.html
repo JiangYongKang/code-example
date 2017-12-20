@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>list</title>
+</head>
+
+<body>
+  <!-- 使用 in 进行循环 -->
+  <ul id="example-1">
+    <li v-for="item in items">{{ item.message }}</li>
+  </ul>
+  <!-- 带索引的循环 -->
+  <ul id="example-2">
+    <li v-for="(item, index) in items">{{ index }} {{ item.message }}</li>
+  </ul>
+  <!-- 迭代对象的属性 -->
+  <ul id="example-3">
+    <li v-for="value in object">{{ value }}</li>
+  </ul>
+  <!-- 用键值对的方式迭代对象属性 -->
+  <ul id="example-4">
+    <li v-for="(value, key, index) in object">{{ index }} {{ key }} {{ value }}</li>
+  </ul>
+  <!-- 显示过滤或者排序后的结果 -->
+  <ul id="example-5">
+    <li v-for="n in evenNumbers">{{ n }}</li>
+  </ul>
+  <!-- 显示一段取值范围 -->
+  <ul id="example-6">
+    <span v-for="n in 10">{{ n }}</span>
+  </ul>
+  <!-- 一个完整的 todo list -->
+  <div id="todo-list-example">
+    <input v-model="newTodoText" v-on:keyup.enter="addNewTodo" placeholder="Add a todo">
+    <ul>
+      <li is="todo-item" v-for="(todo, index) in todos" v-bind:key="todo.id" v-bind:title="todo.title" v-on:remove="todos.splice(index, 1)"></li>
+    </ul>
+  </div>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script type="text/javascript">
+    new Vue({
+      el: '#example-1',
+      data: {
+        items: [
+          { message: 'Foo' },
+          { message: 'Bar' }
+        ]
+      }
+    });
+
+    // 动态的对数组元素进行添加，会自动渲染对应的视图
+    new Vue({
+      el: '#example-2',
+      data: {
+        items: [
+          { message: 'Foo' },
+          { message: 'Bar' }
+        ]
+      }
+    });
+
+    new Vue({
+      el: '#example-3',
+      data: {
+        object: {
+          firstName: 'John',
+          lastName: 'Doe',
+          age: 30
+        }
+      }
+    });
+
+    // vue 无法动态监测对象属性的添加和减少
+    new Vue({
+      el: '#example-4',
+      data: {
+        object: {
+          firstName: 'John',
+          lastName: 'Doe',
+          age: 30
+        }
+      }
+    });
+
+    // 显示过滤后的结果
+    new Vue({
+      el: '#example-5',
+      data: {
+        numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      },
+      computed: {
+        evenNumbers: function () {
+          return this.numbers.filter(function (number) {
+            return number % 2 === 0
+          })
+        }
+      }
+    });
+
+    // 显示一段结果，不需要在对象中声明 data 字段
+    new Vue({
+      el: '#example-6'
+    });
+
+    // 完整的 todo list
+    Vue.component('todo-item', {
+      template: '<li>{{ title }}<button v-on:click="$emit(\'remove\')">X</button></li>',
+      props: ['title']
+    });
+
+    new Vue({
+      el: '#todo-list-example',
+      data: {
+        newTodoText: '',
+        todos: [
+          { id: 1, title: 'Do the dishes' },
+          { id: 2, title: 'Take out the trash' },
+          { id: 3, title: 'Mow the lawn' },
+        ],
+        nextTodoId: 4,
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
