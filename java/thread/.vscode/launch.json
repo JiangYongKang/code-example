@@ -6,7 +6,7 @@
   "configurations": [
     {
       "type": "java",
-      "name": "CounterThread",
+      "name": "CounterThread1",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
@@ -42,6 +42,26 @@
       "console": "internalConsole",
       "stopOnEntry": false,
       "mainClass": "VisibilityDemo",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "DeadLockDemo",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/synchronized",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "DeadLockDemo",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "CounterThread2",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/synchronized",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "CounterThread",
       "args": ""
     },
   ]
