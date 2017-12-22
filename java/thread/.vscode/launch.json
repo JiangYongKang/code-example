@@ -84,5 +84,45 @@
         "mainClass": "Producer",
         "args": ""
       },
+      {
+        "type": "java",
+        "name": "Racer",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/wait-notify",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "Racer",
+        "args": ""
+      },
+      {
+        "type": "java",
+        "name": "Worker",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/wait-notify",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "Worker",
+        "args": ""
+      },
+      {
+        "type": "java",
+        "name": "MyExecutor",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/wait-notify",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "MyExecutor",
+        "args": ""
+      },
+      {
+        "type": "java",
+        "name": "AssemblePointDemo",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/wait-notify",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "AssemblePointDemo",
+        "args": ""
+      },
   ]
 }
