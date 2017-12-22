@@ -64,5 +64,25 @@
       "mainClass": "CounterThread",
       "args": ""
     },
+    {
+      "type": "java",
+      "name": "WaitThread",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/wait-notify",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "WaitThread",
+      "args": ""
+    },
+    {
+        "type": "java",
+        "name": "Producer",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/wait-notify",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "Producer",
+        "args": ""
+      },
   ]
 }
