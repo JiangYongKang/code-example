@@ -124,5 +124,15 @@
         "mainClass": "AssemblePointDemo",
         "args": ""
       },
+      {
+        "type": "java",
+        "name": "InterruptRunnableDemo",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/thread-interrupt",
+        "console": "internalConsole",
+        "stopOnEntry": false,
+        "mainClass": "InterruptRunnableDemo",
+        "args": ""
+      },
   ]
 }
