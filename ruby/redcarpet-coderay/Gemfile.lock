@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.2)
+    redcarpet (3.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coderay
+  redcarpet
+
+BUNDLED WITH
+   1.15.4
