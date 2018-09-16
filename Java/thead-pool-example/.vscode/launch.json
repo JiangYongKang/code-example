@@ -1,0 +1,68 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ThreadPoolExecutorExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadPoolExecutorExample",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "ScheduledThreadPoolExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ScheduledThreadPoolExample",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "SingleThreadScheduledExecutorExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SingleThreadScheduledExecutorExample",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "SingleThreadExecutorExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SingleThreadExecutorExample",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "FixedThreadPoolExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "FixedThreadPoolExample",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CachedThreadPoolExample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "CachedThreadPoolExample",
+            "args": ""
+        }
+    ]
+}
