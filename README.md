@@ -8,4 +8,6 @@
 ### 已完成的题目
 - [x] [0026. 删除排序数组中的重复项](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0026.java)
 - [x] [0122. 买卖股票的最佳时机 II](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0122.java)
+- [x] [0136. 只出现一次的数字](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0136.java)
 - [x] [0189. 旋转数组](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0189.java)
+- [x] [0217. 存在重复元素](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0217.java)
