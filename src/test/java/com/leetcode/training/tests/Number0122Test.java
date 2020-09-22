@@ -1,4 +1,4 @@
-package com.leetcode.training.test;
+package com.leetcode.training.tests;
 
 import com.leetcode.training.Number0122;
 import org.junit.Assert;
