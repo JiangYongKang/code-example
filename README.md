@@ -8,6 +8,7 @@
 ### 已完成的题目
 - [x] [0001. 两数之和](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0001.java)
 - [x] [0008. 字符串转换整数](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0008.java)
+- [x] [0014. 最长公共前缀](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0014.java)
 - [x] [0026. 删除排序数组中的重复项](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0026.java)
 - [x] [0028. 实现 strStr()](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0028.java)
 - [x] [0036. 有效的数独](https://github.com/JiangYongKang/leetcode_training/blob/master/src/main/java/com/leetcode/training/Number0036.java)
